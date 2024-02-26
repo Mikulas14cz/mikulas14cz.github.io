@@ -15,6 +15,18 @@
   color: white;
 }
 
+.design-hover-div {
+  padding: 10px 0;
+  margin: 10px 0;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.design-hover-div:hover {
+  background-color: rgba(0, 0, 0, 0.055);
+  transition: 0.3s;
+}
+
 /* Font */
 @font-face {
   font-family: "Segoe UI";
