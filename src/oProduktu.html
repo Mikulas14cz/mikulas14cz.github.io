@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="../scss/style.css"><!-- CSS -->
+    <link rel="stylesheet" href="../scss/baguetteBox.css"><!-- BaguetteBox -->
+    <link rel="stylesheet" href="../scss/particles.css">
+    <link rel="stylesheet" href="../scss/gallery.css"><!-- Gallery -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"><!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/><!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"><!-- Bootstrap 5.3 -->
+    <title>Mikuláš Lachman | O webu</title>
+</head>
+<body>
+    <div id="particles"></div><!-- Particles -->
+        <div id="inside"><!-- Inside Particles-->
+            <header class="container-fluid animate__animated animate__fadeInDown">
+                <nav class="navbar navbar-expand-xl navbar-light">
+                    <div class="container">
+                    <a class="navbar-brand mobile-show" href="../index.html">ML</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html"><i class="fa-regular fa-hand-point-left"></i> Domů</a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-active" href="oProduktu.html"><i class="fa-regular fa-lightbulb"></i> O produktu</a>
+                        </li>
+                        </ul>
+                    </div>
+                    </div>
+                </nav>    
+            </header>
+
+            <div class="container content animate__animated animate__fadeInUp animate__delay-1s">
+                <section id="OWebu" class="center"><br>
+                    <h2>O produktu</h2><hr>       
+                    <article class="mt-4 text-basic">
+                        <p><span class="theme-text-secondary"><b>Webové stránky</b></span> vznikly v roce 2024 a nahradily původní webové stránky z roku 2023.</p>
+                    </article>
+                    <h4 class="mt-5">Využité technologie</h4>
+                    <div class="row">
+                        <div class="col-xl-6 verticalHorizonCenter">
+                            <img width="80%" height="auto" class="construction mt-5" src="../assets/images/Left hander-rafiki.svg" alt="">
+                        </div>
+                        <div class="col-xl-6 verticalHorizonCenter">
+                            <article class="w-100 text-basic">
+                                <ul class="list">
+                                    <li><i class="fa-brands fa-html5"></i> HTML, <i class="fa-brands fa-css3-alt"></i> CSS</li>
+                                    <li><i class="fa-brands fa-bootstrap"></i> Bootstrap 5.3</li>
+                                    <li><i class="fa-brands fa-font-awesome"></i> Font Awesome</li>
+                                    <li>Animate.css, Particles.js</li>
+                                    <li>Typed.js</li>
+                                </ul>
+                            </article>
+                        </div>                        
+                    </div>
+
+                    <h4 class="mt-5">Barva a design</h4>
+                    <div class="row">
+                        <div class="col-xl-6 verticalHorizonCenter">
+                            <div class="theme-color-primary color-div mt-5">
+                                <span class="text-basic">Primární barva: <b>#ffc107</b></span>
+                            </div>
+                            <p class="mt-2">
+                                <b>Meruňková</b> barva je barvou roku 2024.
+                             </p>
+                            <div class="theme-color-secondary color-div">
+                                <span class="text-basic">Sekundární barva: <b>#0745FF</b></span>
+                            </div>
+                            <p class="mt-2">
+                                <b>Magenta</b> byla barva roku 2023.
+                            </p>
+                            <div class="theme-color-retro color-div">
+                                <span class="text-basic">Retro barva: <b>#ffc107</b></span>
+                            </div>
+                            <p class="mt-2">
+                                <b>Vzpomínka na předchozí webové stránky</b>
+                            </p>                          
+                        </div>
+                        <div class="col-xl-6 verticalHorizonCenter">
+                            <img width="90%" height="auto" class="construction mt-5" src="../assets/images/Creative thinking-rafiki.svg" alt="">
+                        </div>
+                    </div>  
+                </section>
+            </div>
+       
+            <footer>
+                <div class="container-fluid">
+                    <div class="pt-3 row">
+                        <div class="col-xl-5 offset-xl-1 verticalHorizonCenter">
+                            <p class="copyright">Copyright © 2024 | Mikulas Lachman</p>
+                        </div>
+                        <div class="col-xl-5 verticalHorizonCenter">
+                            <p class="right copyright">Designed by Mikulas Lachman © 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div><!-- Inside Particles-->
+
+    <script src="../js/particles.js"></script>
+
+    <script src="../js/app.js"></script>
+
+    <script src="../js/baguetteBox.js"></script>
+
+    <script>
+        baguetteBox.run('.tz-gallery');
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+
+</body>
+</html>

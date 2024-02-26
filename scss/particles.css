@@ -1,0 +1,20 @@
+
+/* PARTICLES */
+
+#particles{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -100;
+    top:0;
+    left:0;
+}
+
+#inside{
+    position: relative;
+    z-index: 10;
+    width: 100% !important;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,303 @@
+/* Colors */
+
+$theme-color-primary: #fbd6c9;
+
+$theme-color-secondary: #950058;
+
+$theme-color-retro: #ffc107;
+
+$text-color-primary: #000000c7;
+
+
+.theme-color-primary{
+    background-color: $theme-color-primary;
+    color: black;
+}
+
+.theme-color-retro{
+    background-color: $theme-color-retro;
+    color: black;
+}
+
+.theme-color-secondary{
+    background-color: $theme-color-secondary;
+    color: white;
+}
+
+/* Font */
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: url("../font/VarelaRound-Regular.ttf");
+    font-style: normal;
+}
+
+/* HTML & BODY */
+
+html, body{
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Segoe UI !important;
+    color: $text-color-primary !important;
+    scroll-behavior: smooth;
+}
+
+/* HEADINGS */
+
+h1, h2, h3, h4, h5, h6{
+    letter-spacing: 4px;
+}
+
+h1{
+    font-size: 65px !important;
+    color: black;
+}
+
+h2{
+    font-size: 35px !important;
+    font-weight: 600 !important;
+}
+
+h3{
+    font-weight: 600 !important;
+    font-size: 30px !important;
+}
+
+h4{
+    font-weight: 500 !important;
+    font-size: 25px !important;
+}
+
+/* HTML TAGS */
+
+a {
+    text-decoration: none !important;
+    color: $text-color-primary !important;
+}
+
+p{
+    line-height: 38px;
+}
+
+/* GENERAL */
+
+.theme-link{
+    text-shadow: 3px 4px 4px rgba(0, 0, 0, 0.18);
+    border-bottom: 4px solid rgba(128, 128, 128, 0.199);
+}
+
+.theme-link-primary:hover{
+    border-bottom: 4px solid $theme-color-primary;
+    transition: 0.4s;
+}
+
+.theme-link-secondary:hover{
+    border-bottom: 4px solid $theme-color-secondary;
+    transition: 0.4s;
+}
+
+.list{
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.list li {
+    padding: 15px;
+}
+
+.list li:hover{
+    background-color: rgba(128, 128, 128, 0.128);
+    border-radius: 8px;
+}
+
+.svg{
+    width: 50%;
+}
+
+/* Tools */
+
+.verticalHorizonCenter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.center{
+    text-align: center;
+}
+
+.theme-text-secondary{
+    color: $theme-color-secondary !important;
+}
+
+
+.text-basic{
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-family: Segoe UI !important;
+}
+
+.row{
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+  
+
+/* Navbar */
+
+.navbar{
+    min-height: 90px;
+    margin: 25px;
+    border-radius: 12px;
+}
+
+.navbar-brand{
+    font-weight: 800;
+    letter-spacing: -1px !important;
+    font-size: 35px !important;
+    color: $theme-color-secondary !important;
+    text-shadow: 3px 4px 4px rgba(0, 0, 0, 0.18);
+    transition: 0.4s;
+}
+
+.navbar-brand:hover{
+    opacity: 0.7;
+    transition: 0.4s;
+}
+
+.navbar .nav-item .nav-link{
+    margin: 20px;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: 600;
+    color: #000000a6 !important;
+    text-shadow: 3px 4px 4px rgba(0, 0, 0, 0.18);
+    border-bottom: 3px solid rgba(128, 128, 128, 0.121);
+    transition: 0.2s;
+}
+
+.nav-link i {
+    margin-right: 10px;
+}
+
+.navbar .nav-item .nav-link-active {
+    border-bottom: 3px solid $theme-color-secondary;
+    color: $theme-color-secondary !important;
+}
+
+.navbar .nav-item .nav-link:hover{
+    transition: 0.2s;
+    //border-bottom: 3px solid  $theme-color-secondary ;
+    //color: $theme-color-secondary !important;
+    border-bottom: 3px solid black;
+    color: black !important;
+}
+
+/* Úvod */
+
+.name-heading{
+    border-bottom: 6px solid $theme-color-primary;
+}
+
+.introduction-icons a {
+    font-size: 35px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.introduction-icons a:hover {
+    color: black !important;
+}
+
+/* Kontakt */
+
+.form-control{
+    display: inline !important;
+}
+
+
+/* O webu */
+
+.color-div{
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px;
+    width: 80%;
+}
+
+/* Footer */
+
+footer{
+    margin-top: 50px;
+    font-size: 16px;
+    min-height: 70px;
+    background-color: $theme-color-primary;
+    color: black;
+    border-top: rgba(255, 255, 255, 0.234) 8px solid;
+    //background-color: $theme-color-primary;
+}
+
+.mobile-show{
+    display: none;
+}
+
+.mobile-hide{
+    display: show;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 1200px) {
+
+    .navbar .nav-item .nav-link{
+        margin: 0px;  
+        border: none;
+    }
+
+    .mobile-show{
+        display: block;
+    }
+
+    .mobile-hide{
+        display: none;
+    }
+
+    .navbar .nav-item .nav-link:hover{
+        border: none;
+        color: $theme-color-primary !important;
+    }
+
+    .navbar .navbar-collapse{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    h1{
+        font-size: 30px !important;
+    }
+
+    h2{
+        font-size: 20px !important;
+    }
+
+    .basic-text{
+        font-size: 15px;
+    }
+
+    .content{
+        padding-left: 40px !important;
+        padding-right: 40px !important;
+    }
+
+    .color-div{
+        width: 80%;
+    }
+}
