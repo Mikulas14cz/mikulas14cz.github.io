@@ -8,6 +8,15 @@ $theme-color-retro: #ffc107;
 
 $text-color-primary: #000000c7;
 
+::-webkit-scrollbar{
+    width: 7px;
+    background-color: #ffffff !important;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: $theme-color-primary;
+    border-radius: 0px;
+}
 
 .theme-color-primary{
     background-color: $theme-color-primary;
@@ -221,22 +230,66 @@ p{
     border-bottom: 6px solid $theme-color-primary;
 }
 
-.introduction-icons a {
-    font-size: 35px;
+.introduction-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/*
+.custom-tooltip .tooltip-inner {
+    background-color: rgba(168, 168, 168, 0.242) !important;
+    color: $theme-color-secondary;
+  }
+
+.tooltip-arrow::before, .bs-tooltip-bottom .tooltip-arrow::before {
+    border-bottom: rgba(168, 168, 168, 0.242) !important;
+  }
+*/
+
+.introduction-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-right: 20px;
+    margin-left: 20px;
+}
+
+
+.introduction-icon-info{
+    display: none;
+    font-size: 20px;
+    transition: 1s;   
+}
+
+.introduction-icons a {
+    font-size: 50px;
+    margin-right: 20px;
+    transition: 0.6s;   
     margin-left: 20px;
 }
 
 .introduction-icons a:hover {
     color: black !important;
+    font-size: 65px;
+    transition: 0.4s;
+
+    ~ .introduction-icon-info {
+        display: block;
+    }
 }
 
-/* Kontakt */
-
-.form-control{
-    display: inline !important;
+.fa-graduation-cap {
+    color: #d55027;
 }
 
+.fa-linkedin {
+    color: #0077B5;
+}
+
+.fa-github {
+    color: #800080;
+}
 
 /* O webu */
 
@@ -277,12 +330,20 @@ footer{
         border: none;
     }
 
+    .introduction-icons a:hover {
+        font-size: 35px !important;
+    }
+
+    .introduction-icons a {
+        font-size: 30px;
+    }
+
     .mobile-show{
         display: block;
     }
 
     .mobile-hide{
-        display: none;
+        display: none !important;
     }
 
     .navbar .nav-item .nav-link:hover{
